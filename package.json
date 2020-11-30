@@ -4,6 +4,10 @@
   "description": "",
   "type": "module",
   "main": "server.js",
+  "engines": {
+    "node": "15.x",
+    "npm": "6.x"
+  },
   "scripts": {
     "start": "export $(cat .env | xargs) && node ./src/server.js",
     "debug": "export $(cat .env | xargs) && node --inspect ./src/server.js",
